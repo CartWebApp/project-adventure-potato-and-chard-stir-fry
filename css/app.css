@@ -2,6 +2,20 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+   
+   /* The image used */
+   background-image: url(background-home.webp);
+
+   /* Full height */
+   height: 100%; 
+ 
+   /* Center and scale the image nicely */
+  
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+p{
+    color: aliceblue;
 }
 
 header {
@@ -29,8 +43,12 @@ nav ul li a {
 .project {
     padding: 20px;
     text-align: center;
+    color: aliceblue;
+  
 }
 
 .hidden {
     display: none;
 }
+
+
