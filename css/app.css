@@ -2,9 +2,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-   
-   /* The image used */
-   background-image: url(background-home.webp);
+}
+
+#startBody {
+    /* The image used */
+   background-image: url(../images/background-home.webp);
 
    /* Full height */
    height: 100%; 
@@ -14,7 +16,8 @@ body {
    background-repeat: no-repeat;
    background-size: cover;
 }
-p{
+
+p {
     color: aliceblue;
 }
 .def{
@@ -44,6 +47,11 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .project {
