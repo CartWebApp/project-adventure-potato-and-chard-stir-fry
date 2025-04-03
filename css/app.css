@@ -4,7 +4,7 @@ body {
     padding: 0;
 }
 
-#startBody {
+#indexBody {
     /* The image used */
    background-image: url(../images/background-home.webp);
 
@@ -59,4 +59,20 @@ a {
     display: none;
 }
 
+#startText {
+    border: 1px solid black;
+    width: 50vw;
+    position: relative;
+    top: 20vh;
+    left: 25vw;
+    padding: 1%;
+}
 
+.startOptions {
+    border: 1px black solid;
+    width: 10vw;
+}
+
+#startContainer {
+    display: flex;
+}
