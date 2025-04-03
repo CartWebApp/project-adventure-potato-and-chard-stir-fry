@@ -2,32 +2,21 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url(background-home.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
 }
 
-#indexBody {
-    /* The image used */
-   background-image: url(../images/background-home.webp);
-
-   /* Full height */
-   height: 100%; 
- 
-   /* Center and scale the image nicely */
-  
-   background-repeat: no-repeat;
-   background-size: cover;
-}
-
-p {
-    color: aliceblue;
-}
-.def{
-    font-size: 167%;
-}
 header {
+    font-family: "Lacquer", system-ui;
+    font-weight: 400;
+    font-style: normal;
+background: #333;
+padding: 1rem;
+color: white;
+text-align: center;
 
-        font-family: "Lacquer", system-ui;
-        font-weight: 400;
-        font-style: normal;
     background: #333;
     padding: 1rem;
     color: white;
@@ -47,22 +36,23 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-}
-
-a {
-    text-decoration: none;
-    color: black;
+    color: aliceblue;
 }
 
 .project {
     padding: 20px;
     text-align: center;
-    color: aliceblue;
-  
 }
 
 .hidden {
     display: none;
+}
+.title{
+    color: aliceblue;
+}
+.def{
+    color: aliceblue;
+    font-size: 192%;
 }
 button {
     color:white;
@@ -101,8 +91,25 @@ button {
     align-items: end;
     margin-left: 87%;
     margin-top: 18%;
+    color: aliceblue;
 }
-          
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #startText {
     border: 1px solid black;
