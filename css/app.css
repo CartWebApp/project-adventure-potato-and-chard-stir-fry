@@ -93,9 +93,34 @@ button {
     margin-top: 18%;
     color: aliceblue;
 }
+.round {
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    color: black;
+    width: 50%;
+    height: 10%;
+  }
   
 
-
+/*credit page*/
+.credits{
+        font-family: "Martel", serif;
+        font-weight: 900;
+        font-style: normal;
+        text-align: center;
+        color: azure;
+        margin: 10%;
+      }
+/*How to play*/
+.how{
+        font-family: "Limelight", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: azure;
+        text-align: center;
+        margin: 10%;
+      }
+      
 
 
 
