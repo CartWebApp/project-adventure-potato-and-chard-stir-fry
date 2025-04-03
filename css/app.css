@@ -25,9 +25,9 @@ p {
 }
 header {
 
-        font-family: "Lacquer", system-ui;
-        font-weight: 400;
-        font-style: normal;
+    font-family: "Lacquer", system-ui;
+    font-weight: 400;
+    font-style: normal;
     background: #333;
     padding: 1rem;
     color: white;
@@ -63,6 +63,7 @@ a {
 
 .hidden {
     display: none;
+
 }
 button {
     color:white;
@@ -76,27 +77,30 @@ button {
     display: block; /* Make the buttons appear below each other */
     align-items: center;
     margin-left: 43%;
-  } 
+} 
   
-  button:hover {
+button:hover {
     background: #395b20;
     border: 1px solid #8b8b8b;
-  }
+}
   
-  button:active {
+button:active {
     background: #2e2e2e;
     border: 1px solid black;
     color: white;
-    }
-    .credit{
-        margin-left: 45%;
-    }
-    .title{
-        font-size: 435%;
-            font-family: "Lacquer", system-ui;
-            font-weight: 400;
-            font-style: normal;
-          }
+}
+
+.credit{
+    margin-left: 45%;
+}
+    
+.title{
+    font-size: 435%;
+    font-family: "Lacquer", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .footer{
     align-items: end;
     margin-left: 87%;
@@ -116,8 +120,21 @@ button {
 .startOptions {
     border: 1px black solid;
     width: 10vw;
+    padding: 1.5%;
 }
 
 #startContainer {
     display: flex;
+    position: relative;
+    top: 26vh;
+    left: 30vw;
+    width: 40vw;
+    justify-content: space-evenly;
+}
+
+.startP {
+    color: black;
+    margin: 0%;
+    height: 11vh;
+    font-size: 1.5rem;
 }
