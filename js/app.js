@@ -14,7 +14,7 @@ function storeChoice() {
     // let buttonName = this.name;
     let number = 0;
 
-    sessionStorage.setItem(`buttonName${number}`, this.name);
+    sessionStorage.setItem(`buttonName${number}`, this.name); // I NEED TO MAKE UNIQUE KEY NAME FOR ALL VALUES DONT FORGET
     console.log(this.name);
 
     // endArray.push(sessionStorage.getItem("buttonName"));
