@@ -124,8 +124,14 @@ button:active {
         margin: 10%;
       }
       
-
-
+/*option1m*/
+.body{
+    background-image:url(../images/boy-lost.webp) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    background-position-y: 49%;
+}
 
 
 
