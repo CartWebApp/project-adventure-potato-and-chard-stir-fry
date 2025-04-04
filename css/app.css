@@ -126,6 +126,27 @@ button:active {
         text-align: center;
         margin: 10%;
       }
+      
+/*option1m*/
+.body{
+    background-image:url(../images/boy-lost.webp) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    background-position-y: 49%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 #startText {
     border: 1px solid black;
