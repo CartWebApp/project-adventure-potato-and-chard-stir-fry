@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Lacquer&family=Martel:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/app.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="../css/app.css">
     <script defer src="../js/app.js"></script>
     <title>Adventure Story Game</title>
 </head>
-<body class="body">
+<body >
 
     
    
@@ -22,23 +22,30 @@
     </header>
     <main>
         <section>
-            <p>As you wander deeper into the woods, you hear a strange sound—a soft rustling, followed by a low growl. A large shadow passes over you. Your heart races. A creature emerges from the underbrush, glowing faintly in the moonlight. It is not quite an animal, yet not quite human either. The creature looks at you, and for a moment, you feel a strange connection. It speaks in a voice that seems to echo in your mind. <br> "You are lost, child. There is no way out, not without me. Will you follow me?"</p>
+            <p>You have Picked Option 1: Continue walking in the hope of finding the path again.  
+            </p> 
+        </section>
+        <section id="startText">
+            <p class="startP" style="height: 13.6vh;">As you wander deeper into the woods, you hear a strange sound—a soft rustling, followed by a low growl. A large shadow passes over you. Your heart races. A creature emerges from the underbrush, glowing faintly in the moonlight. It is not quite an animal, yet not quite human either. The creature looks at you, and for a moment, you feel a strange connection. It speaks in a voice that seems to echo in your mind.
+                "You are lost, child. There is no way out, not without me. Will you follow me?"  </p>
         </section>
 
-        <section>
-            <article>
-                <p>Option 1: Approach the creature cautiously, unsure but curious about what it offers.</p>
-                <button><a>Go</a></button>
+        <section id="startContainer">
+            <article id="startO1" class="startOptions">
+                <p class="startP">Option 1: Approach the creature cautiously, unsure but curious about what it offers</p>
+                <button id="startB1" name="Continue walking in the hope of finding the path again."><a href="option1m.html">Go</a></button>
             </article>
 
-            <article>
-                <p>Option 2: Run away, terrified of the creature and its strange words.</p>
-                <button><a>Go</a></button>
+            <article id="startO2" class="startOptions">
+                <p class="startP">Option 2: Run away, terrified of the creature and its strange words.  </p>
+                <button id="startB2" name="Climb a tree to get a better view of your surroundings."><a href="option2m.html">Go</a></button>
             </article>
             
-            <article>
-                <p>Option 3: Demand to know what it is and why it wants to help.</p>
-                <button><a>Go</a></button>
+            <article id="startO3" class="startOptions">
+                <p class="startP">Option 3: Demand to know what it is and why it wants to help.
+                </p>
+                <button id="startB3" name="To go explore the his new environment."><a href="option3m.html">Go</a></button>
             </article>
         </section>
     </main>
+    

@@ -147,13 +147,12 @@ button:active {
 
 
 
-
 #startText {
     border: 1px solid black;
-    width: 50vw;
+    width: 78vw;
     position: relative;
-    top: 20vh;
-    left: 25vw;
+    top: 11vh;
+    left: 12vw;
     padding: 1%;
 }
 
@@ -166,15 +165,18 @@ button:active {
 #startContainer {
     display: flex;
     position: relative;
-    top: 26vh;
-    left: 30vw;
-    width: 40vw;
+    top: 21vh;
+    left: 29vw;
+    width: 59vw;
     justify-content: space-evenly;
 }
 
 .startP {
     color: black;
     margin: 0%;
-    height: 11vh;
+    height: 23vh;
     font-size: 1.5rem;
+    font-family: "Charm", cursive;
+    font-weight: 700;
+    font-style: normal;
 }
