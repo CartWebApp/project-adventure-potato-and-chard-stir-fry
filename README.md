@@ -1,1 +1,3 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/48EhjRl5)
+
+were going to name the option the short version of their colors from the story the only thing going to change is the first 2 letters so we can make them difrent and for the farther we go into the story there going to be named the color and the section.
