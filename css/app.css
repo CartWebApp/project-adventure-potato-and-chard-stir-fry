@@ -80,7 +80,7 @@ button {
     cursor: pointer; /* Pointer/hand icon */
     display: block; /* Make the buttons appear below each other */
     align-items: center;
-    margin-left: 43%;
+    margin-left: 43.5%;
 } 
   
 button:hover {
@@ -96,6 +96,10 @@ button:active {
 
 .credit{
     margin-left: 45%;
+}
+
+.howPlay {
+    margin-left: 43%;
 }
     
 .title{
