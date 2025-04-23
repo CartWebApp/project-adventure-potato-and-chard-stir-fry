@@ -25,6 +25,14 @@ header {
     text-align: center;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+    font-family: "Charm", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -56,7 +64,11 @@ nav ul li a {
 .def{
     color: aliceblue;
     font-size: 192%;
+    font-family: "Charm", cursive;
+    font-weight: 700;
+    font-style: normal;
 }
+
 button {
     color:white;
     margin: 30px;
@@ -164,7 +176,7 @@ button:active {
     width: 78vw;
     position: relative;
     top: 11vh;
-    left: 12vw;
+    left: 9vw;
     padding: 1%;
 }
 
@@ -178,7 +190,7 @@ button:active {
     display: flex;
     position: relative;
     top: 21vh;
-    left: 29vw;
+    left: 18vw;
     width: 59vw;
     justify-content: space-evenly;
 }
@@ -1226,3 +1238,12 @@ button:active {
 }
 
 
+.whiteP {
+    color: white;
+    margin: 0%;
+    height: 23vh;
+    font-size: 1.5rem;
+    font-family: "Charm", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
