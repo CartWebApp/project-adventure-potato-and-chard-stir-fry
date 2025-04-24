@@ -1,39 +1,35 @@
-// document.addEventListener("DOMContentLoaded", function () {
-//     const moreInfoBtn = document.getElementById("more-info");
-//     const extraInfo = document.getElementById("extra-info");
-
-//     moreInfoBtn.addEventListener("click", function () {
-//         extraInfo.classList.toggle("hidden");
-//     });
-// });
-
 let sessionData = {};
+let num = 0;
 
 // Store name of the button in sessionStorage
 function storeChoice() {
     // let buttonName = this.name;
-    let number = 0;
 
-    sessionStorage.setItem(`buttonName${number}`, this.name); // I NEED TO MAKE UNIQUE KEY NAME FOR ALL VALUES DONT FORGET
+    findNextAvailableNumber()
+
+    sessionStorage.setItem(`${num}`, this.name);
     console.log(this.name);
 
     // endArray.push(sessionStorage.getItem("buttonName"));
-    number++;
+    return;
+}
+
+function findNextAvailableNumber() {
+    // Convert number to string for comparison with keys
+    while (sessionStorage.hasOwnProperty(String(num))) {
+        num++; // If key exists, increment and check again
+    }
+    return num; // Return the first number that is not a key
 }
 
 function returnChoices() {
-    // Loop through all keys in sessionStorage
-    for (let i = 0; i < sessionStorage.length; i++) {
-        // Get the key at the current index
-        let key = sessionStorage.key(i);
-
-        // Get the value associated with that key
-        let value = sessionStorage.getItem(key);
-
-        // Store it in the sessionData object
-        sessionData[key] = value;
-    }
+    const endArray = Object.keys(sessionStorage)
+        .map(Number)                   // Convert keys to numbers
+        .sort((a, b) => a - b)        // Sort keys numerically
+        .map(key => sessionStorage[key]);        // Get values in order
+    return endArray;
 }
+
 
 const buttons = document.querySelectorAll("button");
 buttons.forEach(button => {
