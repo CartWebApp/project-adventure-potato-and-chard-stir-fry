@@ -81,6 +81,9 @@ button {
     display: block; /* Make the buttons appear below each other */
     align-items: center;
     margin-left: 43.5%;
+    font-family: "Charm", cursive;
+    font-weight: 700;
+    font-style: normal;
 } 
   
 button:hover {
@@ -112,7 +115,7 @@ button:active {
 .footer{
     align-items: end;
     margin-left: 87%;
-    margin-top: 18%;
+    margin-top: 14%;
     color: aliceblue;
 }
 .round {
@@ -126,22 +129,35 @@ button:active {
 
 /*credit page*/
 .credits{
-        font-family: "Martel", serif;
-        font-weight: 900;
-        font-style: normal;
-        text-align: center;
-        color: azure;
-        margin: 10%;
-      }
+    font-family: "Martel", serif;
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+    color: azure;
+    margin: 10%;
+}
+
+.credits > h2 {
+    font-family: "Charm", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
 /*How to play*/
 .how{
-        font-family: "Limelight", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        color: azure;
-        text-align: center;
-        margin: 10%;
-      }
+    font-family: "Limelight", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: azure;
+    text-align: center;
+    margin: 10%;
+}
+
+.how > h1, .how > h3 {
+    font-family: "Charm", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
       
 /*option1m*/
 .body{
@@ -172,6 +188,7 @@ button:active {
     font-family: "Charm", cursive;
     font-weight: 700;
     font-style: normal; 
+    color: white;
 }
 
 
@@ -200,7 +217,7 @@ button:active {
 }
 
 .startP {
-    color: black;
+    color: white;
     margin: 0%;
     height: 23vh;
     font-size: 1.5rem;
@@ -1239,15 +1256,4 @@ button:active {
     background-attachment: fixed;  
     background-size: cover;
     background-position-y: 49%;
-}
-
-
-.whiteP {
-    color: white;
-    margin: 0%;
-    height: 23vh;
-    font-size: 1.5rem;
-    font-family: "Charm", cursive;
-    font-weight: 700;
-    font-style: normal;
 }
