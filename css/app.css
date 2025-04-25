@@ -97,6 +97,17 @@ button:active {
     color: white;
 }
 
+.returnHome {
+    position: relative;
+    left: 14vw;
+}
+
+#displayChoicesButton {
+    position: absolute;
+    left: -15vw;
+    bottom: 2vh;
+}
+
 .credit{
     margin-left: 45%;
 }
@@ -224,6 +235,17 @@ button:active {
     font-family: "Charm", cursive;
     font-weight: 700;
     font-style: normal;
+}
+
+#displayChoices {
+    position: absolute;
+    left: 28.5vw;
+    bottom: 0vh;
+    font-family: "Charm", cursive;
+    font-weight: 700;
+    font-style: normal;
+    width: 18vw;
+    height: 35vh;
 }
 
 .body2{

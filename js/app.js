@@ -3,14 +3,11 @@ let num = 0;
 
 // Store name of the button in sessionStorage
 function storeChoice() {
-    // let buttonName = this.name;
-
     findNextAvailableNumber()
 
     sessionStorage.setItem(`${num}`, this.name);
     console.log(this.name);
 
-    // endArray.push(sessionStorage.getItem("buttonName"));
     return;
 }
 
@@ -22,16 +19,43 @@ function findNextAvailableNumber() {
     return num; // Return the first number that is not a key
 }
 
+let endArray = [];
+
 function returnChoices() {
-    const endArray = Object.keys(sessionStorage)
+    endArray = Object.keys(sessionStorage)
         .map(Number)                   // Convert keys to numbers
         .sort((a, b) => a - b)        // Sort keys numerically
         .map(key => sessionStorage[key]);        // Get values in order
     return endArray;
 }
 
+// Function to display endArray as text
+function displayChoices() {
+    returnChoices();
 
-const buttons = document.querySelectorAll("button");
-buttons.forEach(button => {
-    button.addEventListener("click", storeChoice);
+    // Convert endArray into a string of text
+    const arrayText = endArray.join(" ");
+
+    // Get the div element by its id and insert the text
+    document.getElementById("displayChoices").innerText = `Your path:` + arrayText;
+}
+
+const displayChoicesButtons = document.querySelectorAll("#displayChoicesButton");
+displayChoicesButtons.forEach(displayChoicesButton => {
+    displayChoicesButton.addEventListener("click", displayChoices);
+});
+
+const startB1s = document.querySelectorAll("#startB1");
+startB1s.forEach(startB1 => {
+    startB1.addEventListener("click", storeChoice);
+});
+
+const startB2s = document.querySelectorAll("#startB2");
+startB2s.forEach(startB2 => {
+    startB2.addEventListener("click", storeChoice);
+});
+
+const startB3s = document.querySelectorAll("#startB3");
+startB3s.forEach(startB3 => {
+    startB3.addEventListener("click", storeChoice);
 });
