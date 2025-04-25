@@ -29,15 +29,35 @@ function returnChoices() {
     return endArray;
 }
 
+// // Function to display endArray as text
+// function displayChoices() {
+//     returnChoices();
+
+//     // Convert endArray into a string of text
+//     const arrayText = endArray.join(" ");
+
+//     // Get the div element by its id and insert the text
+//     document.getElementById("displayChoices").innerText = `Your path:` + arrayText;
+// }
+
 // Function to display endArray as text
 function displayChoices() {
     returnChoices();
 
-    // Convert endArray into a string of text
-    const arrayText = endArray.join(" ");
+    // Get the <ul> element where the <li> elements will be appended
+    const ChoicesUl = document.getElementById('ChoicesUl');
 
-    // Get the div element by its id and insert the text
-    document.getElementById("displayChoices").innerText = `Your path:` + arrayText;
+    // Loop through the array and create a <li> for each value
+    endArray.forEach(x => {
+        // Create a new <li> element
+        const createList = document.createElement('li');
+        
+        // Set the text content of the <li> to the value
+        createList.textContent = x;
+        
+        // Append the <li> to the <ul>
+        ChoicesUl.appendChild(createList);
+    });
 }
 
 const displayChoicesButtons = document.querySelectorAll("#displayChoicesButton");
