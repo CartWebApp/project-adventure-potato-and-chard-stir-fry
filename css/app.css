@@ -169,6 +169,15 @@ button:active {
     font-weight: 700;
     font-style: normal;
 }
+
+#endingsText {
+    border: 1px solid black;
+    width: 78vw;
+    position: relative;
+    top: 11vh;
+    left: 9vw;
+    padding: 1%;
+}
       
 /*option1m*/
 .body{
@@ -214,7 +223,7 @@ button:active {
 
 .startOptions {
     border: 1px black solid;
-    width: 10vw;
+    width: 18vw;
     padding: 1.5%;
 }
 
@@ -222,8 +231,8 @@ button:active {
     display: flex;
     position: relative;
     top: 21vh;
-    left: 18vw;
-    width: 59vw;
+    left: 13.5vw;
+    width: 70vw;
     justify-content: space-evenly;
 }
 
@@ -239,13 +248,13 @@ button:active {
 
 #displayChoices {
     position: absolute;
-    left: 28.5vw;
-    bottom: 0vh;
+    left: 73.5vw;
+    bottom: 2vh;
     font-family: "Charm", cursive;
     font-weight: 700;
     font-style: normal;
-    width: 18vw;
-    height: 35vh;
+    width: 25vw;
+    height: 73.5vh;
 }
 
 .body2{

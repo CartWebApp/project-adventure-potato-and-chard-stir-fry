@@ -21,6 +21,7 @@ function findNextAvailableNumber() {
 
 let endArray = [];
 
+// Put sessionStorage into an array
 function returnChoices() {
     endArray = Object.keys(sessionStorage)
         .map(Number)                   // Convert keys to numbers
@@ -33,12 +34,36 @@ function returnChoices() {
 function displayChoices() {
     returnChoices();
 
-    // Convert endArray into a string of text
-    const arrayText = endArray.join(" ");
+    // Get the <ul> element where the <li> elements will be appended
+    const choicesUl = document.getElementById('choicesUl');
 
-    // Get the div element by its id and insert the text
-    document.getElementById("displayChoices").innerText = `Your path:` + arrayText;
+    const endingsText = document.getElementById('endingsText');
+    endingsText.style.width = `36vw`;
+
+    const returnHome = document.getElementsByClassName(`returnHome`);
+    returnHome[0].style.left = `5vw`
+
+    const displayChoices = document.getElementById(`displayChoices`);
+    displayChoices.style.border = `1px black solid`;
+    displayChoices.style.left = `59.5vw`;
+
+    // Loop through the array and create a <li> for each value
+    endArray.forEach(x => {
+        // Create a new <li> element
+        const createList = document.createElement('li');
+        
+        // Set the text content of the <li> to the value
+        createList.textContent = x;
+        
+        // Append the <li> to the <ul>
+        choicesUl.appendChild(createList);
+    });
 }
+
+function clearSession() {
+    sessionStorage.clear();
+    return;
+};
 
 const displayChoicesButtons = document.querySelectorAll("#displayChoicesButton");
 displayChoicesButtons.forEach(displayChoicesButton => {
@@ -58,4 +83,9 @@ startB2s.forEach(startB2 => {
 const startB3s = document.querySelectorAll("#startB3");
 startB3s.forEach(startB3 => {
     startB3.addEventListener("click", storeChoice);
+});
+
+const returnHomes = document.querySelectorAll(`returnHome`);
+returnHomes.forEach(returnHome => {
+    returnHome.addEventListener("click", clearSession);
 });
