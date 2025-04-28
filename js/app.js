@@ -47,6 +47,15 @@ function displayChoices() {
     // Get the <ul> element where the <li> elements will be appended
     const ChoicesUl = document.getElementById('ChoicesUl');
 
+    const endingsText = document.getElementById('endingsText');
+    endingsText.style.width = `36vw`;
+
+    const returnHome = document.getElementsByClassName(`returnHome`);
+    returnHome[0].style.left = `5vw`
+
+    const displayChoices = document.getElementById(`displayChoices`);
+    displayChoices.style.border = `1px black solid`
+
     // Loop through the array and create a <li> for each value
     endArray.forEach(x => {
         // Create a new <li> element
