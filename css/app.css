@@ -223,7 +223,7 @@ button:active {
 
 .startOptions {
     border: 1px black solid;
-    width: 10vw;
+    width: 18vw;
     padding: 1.5%;
 }
 
@@ -231,8 +231,8 @@ button:active {
     display: flex;
     position: relative;
     top: 21vh;
-    left: 18vw;
-    width: 59vw;
+    left: 13.5vw;
+    width: 70vw;
     justify-content: space-evenly;
 }
 
@@ -248,7 +248,7 @@ button:active {
 
 #displayChoices {
     position: absolute;
-    left: 59.5vw;
+    left: 73.5vw;
     bottom: 2vh;
     font-family: "Charm", cursive;
     font-weight: 700;
