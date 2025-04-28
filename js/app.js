@@ -45,7 +45,7 @@ function displayChoices() {
     returnChoices();
 
     // Get the <ul> element where the <li> elements will be appended
-    const ChoicesUl = document.getElementById('ChoicesUl');
+    const choicesUl = document.getElementById('choicesUl');
 
     const endingsText = document.getElementById('endingsText');
     endingsText.style.width = `36vw`;
@@ -65,7 +65,7 @@ function displayChoices() {
         createList.textContent = x;
         
         // Append the <li> to the <ul>
-        ChoicesUl.appendChild(createList);
+        choicesUl.appendChild(createList);
     });
 }
 
