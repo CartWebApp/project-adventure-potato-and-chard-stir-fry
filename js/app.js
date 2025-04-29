@@ -61,7 +61,6 @@ function displayChoices() {
 
 function clearSession() {
     sessionStorage.clear();
-    return;
 };
 
 const displayChoicesButtons = document.querySelectorAll("#displayChoicesButton");
