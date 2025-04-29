@@ -259,6 +259,10 @@ button:active {
     height: 73.5vh;
 }
 
+#choicesUl {
+    color: white;
+}
+
 .body2{
     background-image:url(../images/beast-forest-boy.jpg) ;
     background-repeat: no-repeat;
@@ -351,6 +355,15 @@ button:active {
     background-size: cover;
     background-position-y: 49%;
 }
+
+.body10{
+    background-image:url(../images/two-path-options-boy.png) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    background-position-y: 49%;
+}
+
 .body10one{
     background-image:url(../images/two-path-options-boy.png) ;
     background-repeat: no-repeat;

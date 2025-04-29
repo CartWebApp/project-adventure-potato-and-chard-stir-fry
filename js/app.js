@@ -1,4 +1,3 @@
-let sessionData = {};
 let num = 0;
 
 // Store name of the button in sessionStorage
