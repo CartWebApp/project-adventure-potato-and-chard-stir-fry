@@ -1,4 +1,3 @@
-let sessionData = {};
 let num = 0;
 
 // Store name of the button in sessionStorage
@@ -27,6 +26,7 @@ function returnChoices() {
         .map(Number)                   // Convert keys to numbers
         .sort((a, b) => a - b)        // Sort keys numerically
         .map(key => sessionStorage[key]);        // Get values in order
+    endArray.filter(value => value !== undefined);//NEED TO TEST
     return endArray;
 }
 
@@ -62,7 +62,6 @@ function displayChoices() {
 
 function clearSession() {
     sessionStorage.clear();
-    return;
 };
 
 const displayChoicesButtons = document.querySelectorAll("#displayChoicesButton");
@@ -85,7 +84,7 @@ startB3s.forEach(startB3 => {
     startB3.addEventListener("click", storeChoice);
 });
 
-const returnHomes = document.querySelectorAll(`returnHome`);
+const returnHomes = document.querySelectorAll(`.returnHome`);
 returnHomes.forEach(returnHome => {
     returnHome.addEventListener("click", clearSession);
 });

@@ -75,7 +75,7 @@ button {
     padding: 7px 35px;
     font: 300 195% langdon;
     background: transparent;
-    border: 3px solid black;
+    border: 3px solid white;
     padding: 10px 24px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
     display: block; /* Make the buttons appear below each other */
@@ -88,7 +88,7 @@ button {
   
 button:hover {
     background: #395b20;
-    border: 1px solid #8b8b8b;
+    border: 3px solid #8b8b8b;
 }
   
 button:active {
@@ -100,6 +100,7 @@ button:active {
 .returnHome {
     position: relative;
     left: 14vw;
+    bottom: -34.35vh;
 }
 
 #displayChoicesButton {
@@ -114,6 +115,13 @@ button:active {
 
 .howPlay {
     margin-left: 43%;
+    position: relative;
+    left: 0.5vw;
+}
+
+.newGame{
+    position: relative;
+    left: 0.35vw;
 }
     
 .title{
@@ -177,6 +185,7 @@ button:active {
     top: 11vh;
     left: 9vw;
     padding: 1%;
+    height: 61vh;
 }
       
 /*option1m*/
@@ -255,6 +264,10 @@ button:active {
     font-style: normal;
     width: 25vw;
     height: 73.5vh;
+}
+
+#choicesUl {
+    color: white;
 }
 
 .body2{
@@ -349,6 +362,15 @@ button:active {
     background-size: cover;
     background-position-y: 49%;
 }
+
+.body10{
+    background-image:url(../images/two-path-options-boy.png) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    background-position-y: 49%;
+}
+
 .body10one{
     background-image:url(../images/two-path-options-boy.png) ;
     background-repeat: no-repeat;
@@ -1113,6 +1135,15 @@ button:active {
     background-size: cover;
     background-position-y: 49%;
 }
+
+.body79{
+    background-image:url(../images/back-forest-boy.png) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    background-position-y: 49%;
+}
+
 .body79one{
     background-image:url(../images/water-boy-new-village-boy.png) ;
     background-repeat: no-repeat;
