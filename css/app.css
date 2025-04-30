@@ -1187,7 +1187,7 @@ button:active {
     background-position-y: 49%;
 }
 .body83{
-    background-image:url(../images/on-top-barrier.png) ;
+    background-image: url(../images/on-top-barrier.png);
     background-repeat: no-repeat;
     background-attachment: fixed;  
     background-size: cover;
