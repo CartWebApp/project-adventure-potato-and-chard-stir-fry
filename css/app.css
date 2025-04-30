@@ -1264,7 +1264,7 @@ button:active {
     background-position-y: 49%;
 }
 .body92{
-    background-image:url(../images/back-forest-boy.png) ;
+    background-image:url(../images/old-women.png) ;
     background-repeat: no-repeat;
     background-attachment: fixed;  
     background-size: cover;
@@ -1292,21 +1292,21 @@ button:active {
     background-position-y: 49%;
 }
 .body96one{
-    background-image:url(../images/back-forest-boy.png) ;
+    background-image:url(../images/confidence-back.png) ;
     background-repeat: no-repeat;
     background-attachment: fixed;  
     background-size: cover;
     background-position-y: 49%;
 }
 .body96{
-    background-image:url(../images/back-forest-boy.png) ;
+    background-image:url(../images/confidence-back.png) ;
     background-repeat: no-repeat;
     background-attachment: fixed;  
     background-size: cover;
     background-position-y: 49%;
 }
 .body97{
-    background-image:url(../images/back-forest-boy.png) ;
+    background-image:url(../images/walking-pass.png) ;
     background-repeat: no-repeat;
     background-attachment: fixed;  
     background-size: cover;
@@ -1320,16 +1320,31 @@ button:active {
     background-position-y: 49%;
 }
 .body99{
-    background-image:url(../images/back-forest-boy.png) ;
+    background-image:url(../images/return-from-yren-village-boy.png) ;
     background-repeat: no-repeat;
     background-attachment: fixed;  
     background-size: cover;
     background-position-y: 49%;
 }
 .body100{
-    background-image:url(../images/back-forest-boy.png) ;
+    background-image:url(../images/two-path-options-boy.png) ;
     background-repeat: no-repeat;
     background-attachment: fixed;  
     background-size: cover;
     background-position-y: 49%;
 }
+.ending1{
+    background-image:url(../images/home-village-boy.png) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    background-position-y: 49%;
+}
+.ending2{
+    background-image:url(../images/finding-new-home.png) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    background-position-y: 49%;
+}
+
