@@ -186,6 +186,7 @@ button:active {
     left: 9vw;
     padding: 1%;
     height: 61vh;
+    background: hsla(0, 0%, 0%, 0.288);
 }
       
 /*option1m*/
@@ -212,12 +213,14 @@ button:active {
 
 
 .chosen{
-    margin-left: 15%;
+    margin-left: 0%;
     font-size: 1.5rem;
     font-family: "Charm", cursive;
     font-weight: 700;
-    font-style: normal; 
+    font-style: normal;
     color: white;
+    background-color: hsla(0, 0%, 0%, 0.288);
+    text-align: center;
 }
 
 
@@ -228,12 +231,14 @@ button:active {
     top: 11vh;
     left: 9vw;
     padding: 1%;
+    background-color: hsla(0, 0%, 0%, 0.288);
 }
 
 .startOptions {
     border: 1px black solid;
     width: 18vw;
     padding: 1.5%;
+    background-color: hsla(0, 0%, 0%, 0.288);
 }
 
 #startContainer {

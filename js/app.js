@@ -47,6 +47,7 @@ function displayChoices() {
     const displayChoices = document.getElementById(`displayChoices`);
     displayChoices.style.border = `1px black solid`;
     displayChoices.style.left = `59.5vw`;
+    displayChoices.style.background = `hsla(0, 0%, 0%, 0.288)`;
 
     // Loop through the array and create a <li> for each value
     endArray.forEach(x => {
