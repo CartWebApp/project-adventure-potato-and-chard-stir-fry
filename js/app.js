@@ -27,7 +27,7 @@ function returnChoices() {
         .sort((a, b) => a - b)        // Sort keys numerically
         .map(key => sessionStorage[key]);        // Get values in order
 
-    endArray = endArray.filter(value => value !== undefined);
+    endArray = endArray.filter(value => value !== undefined); // Remove any instace of undefined
     return endArray;
 }
 
