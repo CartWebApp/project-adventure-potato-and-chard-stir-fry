@@ -32,34 +32,45 @@ function returnChoices() {
 }
 
 // Function to display endArray as text
+let d = 0;
 function displayChoices() {
-    returnChoices();
+    d++;
 
-    // Get the <ul> element where the <li> elements will be appended
     const choicesUl = document.getElementById('choicesUl');
-
     const endingsText = document.getElementById('endingsText');
-    endingsText.style.width = `36vw`;
-
     const returnHome = document.getElementsByClassName(`returnHome`);
-    returnHome[0].style.left = `5vw`
-
     const displayChoices = document.getElementById(`displayChoices`);
-    displayChoices.style.border = `1px black solid`;
-    displayChoices.style.left = `59.5vw`;
-    displayChoices.style.background = `hsla(0, 0%, 0%, 0.25)`;
+    const lists = document.querySelectorAll(`li`)
+    if (d % 2 === 0) {
+        lists.forEach(function(list) {
+            list.remove();
+        });
+        endingsText.style.width = `78vw`;
+        returnHome[0].style.left = `14vw`
+        displayChoices.style.border = `none`;
+        displayChoices.style.left = `73vw`;
+        displayChoices.style.background = `hsla(0, 0%, 0%, 0)`;
+    } else {
+        returnChoices();
 
-    // Loop through the array and create a <li> for each value
-    endArray.forEach(x => {
-        // Create a new <li> element
-        const createList = document.createElement('li');
-        
-        // Set the text content of the <li> to the value
-        createList.textContent = x;
-        
-        // Append the <li> to the <ul>
-        choicesUl.appendChild(createList);
-    });
+        endingsText.style.width = `36vw`;
+        returnHome[0].style.left = `5vw`
+        displayChoices.style.border = `1px black solid`;
+        displayChoices.style.left = `59.5vw`;
+        displayChoices.style.background = `hsla(0, 0%, 0%, 0.25)`;
+
+        // Loop through the array and create a <li> for each value
+        endArray.forEach(x => {
+            // Create a new <li> element
+            const createList = document.createElement('li');
+            
+            // Set the text content of the <li> to the value
+            createList.textContent = x;
+            
+            // Append the <li> to the <ul>
+            choicesUl.appendChild(createList);
+        });
+    }
 }
 
 function clearSession() {
