@@ -331,6 +331,83 @@ button:active {
     color: white;
 }
 
+#currentText {
+    height: 13.6vh;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 520px) {
+    .chosen, .startP, .aOption {
+        font-size: 1rem;
+    }
+
+    #currentText {
+        height: 31vh;
+    }
+
+    button {
+        position: relative;
+        bottom: 36%;
+        margin: 0;
+        left: 39%;
+    }
+
+    .startP {
+        height: 20vh;
+    }
+
+    .aOption {
+        height: 3vh;
+        width: 11vw;
+    }
+
+    #startContainer {
+        flex-direction: column;
+        height: 46vh;
+        justify-content: space-between;
+    }
+
+    .startOptions {
+        height: 19vh;
+        width: 68vw;
+    }
+
+    .title {
+        font-size: 1.75rem;
+        width: 85vw;
+    }
+
+    .def {
+        font-size: 1.3rem;
+        width: 62vw;
+    }
+
+    #more-info {
+        left: 0;
+        font-size: 1.3rem;
+    }
+
+    #creditsA, #howPlayA, #newGameA {
+        margin-top: 13%;
+        top: 13vh;
+    }
+
+    #creditsA {
+        left: 38.5vw;
+        width: 15vw;
+    }
+
+    #newGameA {
+        width: 22vw;
+        left: 35vw;
+    }
+
+    #howPlayA {
+        width: 25.25vw;
+        left: 33.2vw;
+    }
+}
+
 .body2{
     background-image:url(../images/beast-forest-boy.jpg) ;
     background-repeat: no-repeat;
