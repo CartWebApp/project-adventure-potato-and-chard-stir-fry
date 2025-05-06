@@ -52,24 +52,27 @@ function displayChoices() {
         displayChoices.style.background = `hsla(0, 0%, 0%, 0)`;
     } else {
         returnChoices();
+        if (window.screen.width >= 520) {
+            endingsText.style.width = `36vw`;
+            returnHome[0].style.left = `5vw`
+            displayChoices.style.border = `1px black solid`;
+            displayChoices.style.left = `59.5vw`;
+            displayChoices.style.background = `hsla(0, 0%, 0%, 0.25)`;
 
-        endingsText.style.width = `36vw`;
-        returnHome[0].style.left = `5vw`
-        displayChoices.style.border = `1px black solid`;
-        displayChoices.style.left = `59.5vw`;
-        displayChoices.style.background = `hsla(0, 0%, 0%, 0.25)`;
-
-        // Loop through the array and create a <li> for each value
-        endArray.forEach(x => {
-            // Create a new <li> element
-            const createList = document.createElement('li');
+            // Loop through the array and create a <li> for each value
+            endArray.forEach(x => {
+                // Create a new <li> element
+                const createList = document.createElement('li');
+                
+                // Set the text content of the <li> to the value
+                createList.textContent = x;
+                
+                // Append the <li> to the <ul>
+                choicesUl.appendChild(createList);
+            });
+        } else {
             
-            // Set the text content of the <li> to the value
-            createList.textContent = x;
-            
-            // Append the <li> to the <ul>
-            choicesUl.appendChild(createList);
-        });
+        }
     }
 }
 

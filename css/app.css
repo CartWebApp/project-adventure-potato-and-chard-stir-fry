@@ -320,7 +320,7 @@ button:active {
 #displayChoices {
     position: absolute;
     left: 73.5vw;
-    bottom: 2vh;
+    bottom: -8.6vh;
     font-family: "Charm", cursive;
     font-weight: 700;
     font-style: normal;
@@ -364,8 +364,8 @@ button:active {
 
     #startContainer {
         flex-direction: column;
-        height: 46vh;
-        justify-content: space-between;
+        height: 65vh;
+        justify-content: space-evenly;
     }
 
     .startOptions {
@@ -406,6 +406,17 @@ button:active {
     #howPlayA {
         width: 25.25vw;
         left: 33.2vw;
+    }
+
+    #displayChoicesButton {
+        font-size: 1rem;
+        left: 7vw;
+    }
+
+    .returnHome {
+        font-size: 1rem;
+        bottom: -25.2vh;
+        left: 39vw;
     }
 }
 
