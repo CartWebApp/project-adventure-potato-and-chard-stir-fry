@@ -290,6 +290,7 @@ button:active {
     background-color: hsla(0, 0%, 0%, 0.5);
 }
 
+
 .startOptions {
     border: 1px black solid;
     width: 18vw;
@@ -1486,3 +1487,6 @@ button:active {
     background-position-y: 49%;
 }
 
+/*ideas for media queries*/
+
+ 
