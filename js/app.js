@@ -40,19 +40,22 @@ function displayChoices() {
     const endingsText = document.getElementById('endingsText');
     const returnHome = document.getElementsByClassName(`returnHome`);
     const displayChoices = document.getElementById(`displayChoices`);
-    const lists = document.querySelectorAll(`li`)
-    if (d % 2 === 0) {
-        lists.forEach(function(list) {
-            list.remove();
-        });
-        endingsText.style.width = `78vw`;
-        returnHome[0].style.left = `14vw`
-        displayChoices.style.border = `none`;
-        displayChoices.style.left = `73vw`;
-        displayChoices.style.background = `hsla(0, 0%, 0%, 0)`;
-    } else {
-        returnChoices();
-        if (window.screen.width >= 520) {
+    const lists = document.querySelectorAll(`li`);
+
+    if (window.screen.width >= 520) {
+        console.log("trolled");
+        if (d % 2 === 0) {
+            lists.forEach(function(list) {
+                list.remove();
+            });
+            endingsText.style.width = `78vw`;
+            returnHome[0].style.left = `14vw`
+            displayChoices.style.border = `none`;
+            displayChoices.style.left = `73vw`;
+            displayChoices.style.background = `hsla(0, 0%, 0%, 0)`;
+            displayChoices.style.width = `0`
+        } else {
+            returnChoices();
             endingsText.style.width = `36vw`;
             returnHome[0].style.left = `5vw`
             displayChoices.style.border = `1px black solid`;
@@ -63,17 +66,45 @@ function displayChoices() {
             endArray.forEach(x => {
                 // Create a new <li> element
                 const createList = document.createElement('li');
-                
+                    
                 // Set the text content of the <li> to the value
                 createList.textContent = x;
-                
+                    
                 // Append the <li> to the <ul>
                 choicesUl.appendChild(createList);
             });
-        } else {
-            
         }
-    }
+    } else {
+        if (d % 2 === 0) {
+            lists.forEach(function(list) {
+                list.remove();
+            });
+            displayChoices.style.border = `none`;
+            displayChoices.style.width = `0`;
+            displayChoices.style.background = `hsla(0, 0%, 0%, 0)`;
+        } else {
+            returnChoices();
+            displayChoices.style.width = `80.5vw`
+            displayChoices.style.left = `9%`
+            displayChoices.style.bottom = `-65%`
+            displayChoices.style.border = `1px black solid`;
+            displayChoices.style.background = `hsla(0, 0%, 0%, 0.25)`;
+            displayChoices.style.height = `73.5vh`
+
+            // Loop through the array and create a <li> for each value
+            endArray.forEach(x => {
+                // Create a new <li> element
+                const createList = document.createElement('li');
+                    
+                // Set the text content of the <li> to the value
+                createList.textContent = x;
+                    
+                // Append the <li> to the <ul>
+                choicesUl.appendChild(createList);
+            });
+        }
+    }   
+    
 }
 
 function clearSession() {
