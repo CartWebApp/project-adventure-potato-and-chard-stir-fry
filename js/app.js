@@ -42,8 +42,7 @@ function displayChoices() {
     const displayChoices = document.getElementById(`displayChoices`);
     const lists = document.querySelectorAll(`li`);
 
-    if (window.screen.width >= 520) {
-        console.log("trolled");
+    if (window.screen.width > 1024) {
         if (d % 2 === 0) {
             lists.forEach(function(list) {
                 list.remove();
@@ -60,7 +59,7 @@ function displayChoices() {
             returnHome[0].style.left = `5vw`
             displayChoices.style.border = `1px black solid`;
             displayChoices.style.left = `59.5vw`;
-            displayChoices.style.background = `hsla(0, 0%, 0%, 0.25)`;
+            displayChoices.style.background = `hsla(0, 0%, 0%, 0.5)`;
 
             // Loop through the array and create a <li> for each value
             endArray.forEach(x => {
@@ -74,6 +73,35 @@ function displayChoices() {
                 choicesUl.appendChild(createList);
             });
         }
+    } else if (window.screen.width > 520) {
+        if (d % 2 === 0) {
+            lists.forEach(function(list) {
+                list.remove();
+            });
+            displayChoices.style.border = `none`;
+            displayChoices.style.background = `hsla(0, 0%, 0%, 0)`;
+            displayChoices.style.width = `0`
+        } else {
+            returnChoices();
+            displayChoices.style.background = `hsla(0, 0%, 0%, 0.5)`
+            displayChoices.style.bottom = `-75vh`
+            displayChoices.style.left = `9vw` 
+            displayChoices.style.width = `80.15vw`
+            displayChoices.style.border = `1px solid black`
+
+            // Loop through the array and create a <li> for each value
+            endArray.forEach(x => {
+                // Create a new <li> element
+                const createList = document.createElement('li');
+                    
+                // Set the text content of the <li> to the value
+                createList.textContent = x;
+                    
+                // Append the <li> to the <ul>
+                choicesUl.appendChild(createList);
+            });
+            
+        }
     } else {
         if (d % 2 === 0) {
             lists.forEach(function(list) {
@@ -84,11 +112,11 @@ function displayChoices() {
             displayChoices.style.background = `hsla(0, 0%, 0%, 0)`;
         } else {
             returnChoices();
-            displayChoices.style.width = `80.5vw`
+            displayChoices.style.width = `80.15vw`
             displayChoices.style.left = `9%`
             displayChoices.style.bottom = `-65%`
             displayChoices.style.border = `1px black solid`;
-            displayChoices.style.background = `hsla(0, 0%, 0%, 0.25)`;
+            displayChoices.style.background = `hsla(0, 0%, 0%, 0.5)`;
             displayChoices.style.height = `73.5vh`
 
             // Loop through the array and create a <li> for each value
@@ -103,8 +131,7 @@ function displayChoices() {
                 choicesUl.appendChild(createList);
             });
         }
-    }   
-    
+    }     
 }
 
 function clearSession() {
@@ -141,7 +168,7 @@ returnHomes.forEach(returnHome => {
 var x = window.matchMedia("(max-width: 700px)")
 
 // Call listener function at run time
-myFunction(x);
+// myFunction(x);
 
 // Attach listener function on state changes
 x.addEventListener("change", function() {
