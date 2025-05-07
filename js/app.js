@@ -41,6 +41,7 @@ function displayChoices() {
     const returnHome = document.getElementsByClassName(`returnHome`);
     const displayChoices = document.getElementById(`displayChoices`);
     const lists = document.querySelectorAll(`li`);
+    const displayChoicesButton = document.getElementById("displayChoicesButton");
 
     if (window.screen.width > 1024) {
         if (d % 2 === 0) {
@@ -60,6 +61,9 @@ function displayChoices() {
             displayChoices.style.border = `1px black solid`;
             displayChoices.style.left = `59.5vw`;
             displayChoices.style.background = `hsla(0, 0%, 0%, 0.5)`;
+            displayChoices.style.width = `25vw`
+            displayChoices.style.bottom = `2vh`
+            displayChoicesButton.style.left = `-11vw`
 
             // Loop through the array and create a <li> for each value
             endArray.forEach(x => {
@@ -114,10 +118,10 @@ function displayChoices() {
             returnChoices();
             displayChoices.style.width = `80.15vw`
             displayChoices.style.left = `9%`
-            displayChoices.style.bottom = `-65%`
+            displayChoices.style.bottom = `-110%`
             displayChoices.style.border = `1px black solid`;
             displayChoices.style.background = `hsla(0, 0%, 0%, 0.5)`;
-            displayChoices.style.height = `73.5vh`
+            displayChoices.style.height = `113.5vh`
 
             // Loop through the array and create a <li> for each value
             endArray.forEach(x => {

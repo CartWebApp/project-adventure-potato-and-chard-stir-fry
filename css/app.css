@@ -1286,6 +1286,15 @@ button:active {
     background-size: cover;
     background-position-y: 49%;
 }
+
+.body71{
+    background-image:url(../images/shadow-boy.png) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    background-position-y: 49%;
+}
+
 .body71one{
     background-image:url(../images/shadow-boy.png) ;
     background-repeat: no-repeat;
