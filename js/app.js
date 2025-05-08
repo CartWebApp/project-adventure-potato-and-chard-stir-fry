@@ -42,6 +42,7 @@ function displayChoices() {
     const displayChoices = document.getElementById(`displayChoices`);
     const lists = document.querySelectorAll(`li`);
     const displayChoicesButton = document.getElementById("displayChoicesButton");
+    const mainEndings = document.getElementById(`mainEndings`);
 
     if (window.screen.width > 1024) {
         if (d % 2 === 0) {
@@ -84,14 +85,16 @@ function displayChoices() {
             });
             displayChoices.style.border = `none`;
             displayChoices.style.background = `hsla(0, 0%, 0%, 0)`;
-            displayChoices.style.width = `0`
+            displayChoices.style.width = `0`;
+            mainEndings.style.height = `auto`;
         } else {
             returnChoices();
-            displayChoices.style.background = `hsla(0, 0%, 0%, 0.5)`
-            displayChoices.style.bottom = `-75vh`
-            displayChoices.style.left = `9vw` 
-            displayChoices.style.width = `80.15vw`
-            displayChoices.style.border = `1px solid black`
+            mainEndings.style.height = `172vh`;
+            displayChoices.style.background = `hsla(0, 0%, 0%, 0.5)`;
+            displayChoices.style.bottom = `-70vh`;
+            displayChoices.style.left = `9vw` ;
+            displayChoices.style.width = `80.15vw`;
+            displayChoices.style.border = `1px solid black`;
 
             // Loop through the array and create a <li> for each value
             endArray.forEach(x => {
@@ -114,14 +117,16 @@ function displayChoices() {
             displayChoices.style.border = `none`;
             displayChoices.style.width = `0`;
             displayChoices.style.background = `hsla(0, 0%, 0%, 0)`;
+            mainEndings.style.height = `auto`;
         } else {
             returnChoices();
-            displayChoices.style.width = `80.15vw`
-            displayChoices.style.left = `9%`
-            displayChoices.style.bottom = `-110%`
+            mainEndings.style.height = `180vh`;
+            displayChoices.style.width = `80.15vw`;
+            displayChoices.style.left = `9%`;
+            displayChoices.style.bottom = `-77%`;
             displayChoices.style.border = `1px black solid`;
             displayChoices.style.background = `hsla(0, 0%, 0%, 0.5)`;
-            displayChoices.style.height = `113.5vh`
+            displayChoices.style.height = `72.5vh`;
 
             // Loop through the array and create a <li> for each value
             endArray.forEach(x => {

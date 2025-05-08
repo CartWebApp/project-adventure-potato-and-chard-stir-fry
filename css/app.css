@@ -1,7 +1,3 @@
-/* * {
-    background-color: hsla(0, 0%, 0%, 0.5);
-} */
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -104,6 +100,8 @@ button {
     font-family: "Charm", cursive;
     font-weight: 700;
     font-style: normal;
+    position: relative;
+    bottom: -5vh;
 } 
   
 button:hover {
@@ -161,21 +159,21 @@ button:active {
 
 #newGameA {
     display: block;
-    width: 8.65vw;
+    width: 6.3vw;
     position: relative;
     left: 45.5vw;
 }
 
 #creditsA {
     display: block;
-    width: 6.65vw;
+    width: 4.4vw;
     position: relative;
     left: 46.5vw; 
 }
 
 #howPlayA {
     display: block;
-    width: 9.65vw;
+    width: 7.3vw;
     position: relative;
     left: 45vw;
 }
@@ -309,6 +307,7 @@ button:active {
     width: 18vw;
     padding: 1.5%;
     background-color: hsla(0, 0%, 0%, 0.5);
+    height: 38vh;
 }
 
 #startContainer {
@@ -355,7 +354,7 @@ button:active {
     width: 12.35vw;
     position: absolute;
     left: 51vw;
-    bottom: 4.9vh;
+    bottom: 9.95vh;
 }
 
 /*Media Queries*/
@@ -443,8 +442,14 @@ button:active {
 
     .returnHome {
         font-size: 1rem;
-        bottom: -25.2vh;
-        left: 39vw;
+        bottom: 0;
+        left: 0;
+    }
+
+    .returnOption {
+        width: 33vw;
+        left: 41vw;
+        bottom: 2vh;
     }
 
     #displayChoices {
@@ -460,7 +465,7 @@ button:active {
     }
 }
 
-@media screen and (min-width: 520px) and (max-width: 1024px) {
+@media screen and (min-width: 521px) and (max-width: 1024px) {
     #newGameA {
         width: 12.58vw;
         left: 41.75vw;
@@ -490,6 +495,14 @@ button:active {
 
     #more-info {
         margin-top: 3.5vh;
+        bottom: 0;
+    }
+
+    .footer {
+        right: -75vw;
+        position: relative;
+        width: 25vw;
+        bottom: 0;
     }
 
     .how {
@@ -510,12 +523,14 @@ button:active {
 
     .startOptions {
         width: 50vw;
+        height: 25vh;
     }
 
     button {
         margin: 0;
         left: 23vw;
         position: relative;
+        bottom: 5vh;
     }
 
     .noOption {
