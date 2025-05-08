@@ -38,7 +38,7 @@ function displayChoices() {
 
     const choicesUl = document.getElementById('choicesUl');
     const endingsText = document.getElementById('endingsText');
-    const returnHome = document.getElementsByClassName(`returnHome`);
+    const returnOption = document.getElementsByClassName(`returnOption`);
     const displayChoices = document.getElementById(`displayChoices`);
     const lists = document.querySelectorAll(`li`);
     const displayChoicesButton = document.getElementById("displayChoicesButton");
@@ -49,7 +49,7 @@ function displayChoices() {
                 list.remove();
             });
             endingsText.style.width = `78vw`;
-            returnHome[0].style.left = `14vw`
+            returnOption[0].style.left = `53vw`
             displayChoices.style.border = `none`;
             displayChoices.style.left = `73vw`;
             displayChoices.style.background = `hsla(0, 0%, 0%, 0)`;
@@ -57,12 +57,12 @@ function displayChoices() {
         } else {
             returnChoices();
             endingsText.style.width = `36vw`;
-            returnHome[0].style.left = `5vw`
+            returnOption[0].style.left = `23vw`
             displayChoices.style.border = `1px black solid`;
-            displayChoices.style.left = `59.5vw`;
+            displayChoices.style.left = `61.5vw`;
             displayChoices.style.background = `hsla(0, 0%, 0%, 0.5)`;
             displayChoices.style.width = `25vw`
-            displayChoices.style.bottom = `2vh`
+            displayChoices.style.bottom = `9.5vh`
             displayChoicesButton.style.left = `-11vw`
 
             // Loop through the array and create a <li> for each value

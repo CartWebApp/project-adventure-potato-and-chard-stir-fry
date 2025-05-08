@@ -1,3 +1,7 @@
+/* * {
+    background-color: hsla(0, 0%, 0%, 0.5);
+} */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -118,9 +122,7 @@ button:active {
 }
 
 .returnHome {
-    position: relative;
-    left: 14vw;
-    bottom: -36.35vh;
+    margin: 0;
 }
 
 #displayChoicesButton {
@@ -186,8 +188,11 @@ button:active {
     font-style: normal;
     text-align: center;
     color: azure;
-    margin: 10%;
     background-color: hsl(0, 0%, 0%, 0.5);
+    width: 32vw;
+    position: absolute;
+    left: 34vw;
+    bottom: 29.5vh;
 }
 
 .credits > h2 {
@@ -242,6 +247,13 @@ button:active {
     display: block;
 }
 
+.noOption {
+    position: absolute;
+    bottom: 1vh;
+    left: 38vw;
+    margin: 0;
+}
+
 /*option1m*/
 .body{
     background-image:url(../images/boy-lost.webp) ;
@@ -285,7 +297,7 @@ button:active {
     border: 1px solid black;
     width: 78vw;
     position: relative;
-    top: 11vh;
+    top: 7vh;
     left: 9vw;
     padding: 1%;
     background-color: hsla(0, 0%, 0%, 0.5);
@@ -302,7 +314,7 @@ button:active {
 #startContainer {
     display: flex;
     position: relative;
-    top: 21vh;
+    top: 16vh;
     left: 13.5vw;
     width: 70vw;
     justify-content: space-evenly;
@@ -325,16 +337,25 @@ button:active {
     font-family: "Charm", cursive;
     font-weight: 700;
     font-style: normal;
-    width: 25vw;
-    height: 73.5vh;
+    width: 0;
+    height: 65.5vh;
+    overflow: scroll;
 }
 
 #choicesUl {
     color: white;
 }
 
-#currentText {
-    height: 13.6vh;
+/* #currentText {
+    height: auto;
+} */
+
+.returnOption {
+    display: block;
+    width: 12.35vw;
+    position: absolute;
+    left: 51vw;
+    bottom: 4.9vh;
 }
 
 /*Media Queries*/
@@ -387,6 +408,12 @@ button:active {
     #more-info {
         left: 0;
         font-size: 1.3rem;
+    }
+
+    .credits {
+        font-size: 0.8rem;
+        width: 58vw;
+        left: 21vw;
     }
 
     #creditsA, #howPlayA, #newGameA {
@@ -478,7 +505,7 @@ button:active {
         width: 51.5vw;
         left: 22vw;
         height: 100vh;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
     .startOptions {
@@ -491,13 +518,26 @@ button:active {
         position: relative;
     }
 
+    .noOption {
+        left: 37vw;
+    }
+
     #displayChoicesButton {
         left: 9vw;
+        bottom: 5.2vh;
     }
 
     .returnHome {
-        bottom: -9.45vh;
-        left: 47vw;
+        bottom: 0;
+        left: 0;
+    }
+
+    .returnOption {
+        display: block;
+        width: 24.65vw;
+        position: absolute;
+        left: 49vw;
+        bottom: 5.2vh;
     }
 
     #displayChoices {
